@@ -1,0 +1,44 @@
+{
+  "name": "root-lucas.github.io",
+  "version": "1.0.0",
+  "description": "集博客之精华而生的博客,旨在梳理知识点",
+  "main": "index.js",
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-google-analytics": "^1.2.0",
+    "@vuepress/plugin-pwa": "^1.2.0",
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "ejs": "^3.0.1",
+    "husky": "^3.1.0",
+    "nodemon": "^2.0.1",
+    "ora": "^4.0.3",
+    "prettier": "^1.19.1",
+    "tracer": "^1.0.1",
+    "vuepress-plugin-comment": "^0.7.2",
+    "vuepress-plugin-viewer": "^1.0.0"
+  },
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  },
+  "scripts": {
+    "check": "node bin/prettier.js -t docs/passages -c",
+    "lint": "node bin/prettier.js -t docs/passages -l",
+    "check:notes": "node bin/prettier.js -t notes -c",
+    "lint:notes": "node bin/prettier.js -t notes -l",
+    "start": "npm run dev",
+    "dev": "nodemon --watch docs bin/sidebar.js & ./node_modules/.bin/vuepress dev .",
+    "build": "node bin/sidebar.js && ./node_modules/.bin/vuepress build .",
+	"deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/root-lucas/root-lucas.github.io.git"
+  },
+  "author": "lucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/root-lucas/root-lucas.github.io/issues"
+  },
+  "homepage": "https://github.com/root-lucas/root-lucas.github.io#readme"
+}
