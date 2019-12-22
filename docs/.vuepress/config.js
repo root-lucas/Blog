@@ -28,7 +28,7 @@ module.exports = {
     //   {
     //     choosen: 'gitalk', 
     //     options: {
-    //       clientID: '9e6a8b01c4a751e3c818',
+    //       clientID: '9e6a8b01c4a751e3c819',
     //       clientSecret: process.env.clientSecret || '',
     //       repo: 'root-lucas.github.io',
     //       owner: 'root-lucas.github.io',
